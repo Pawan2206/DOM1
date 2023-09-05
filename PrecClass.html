@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capturing and Displaying Form Data using DOM Manipulation</title>
+</head>
+<style>
+    #para {
+        font-size:large;
+    }
+</style>
+<body>
+    <input type="text" id="myinput">
+    <button id="mybutton" onclick="Click()">Submit</button>
+    <p id="para"></p>
+</body>
+<script>
+    let inp = document.getElementById("myinput");
+    let pa = document.getElementById("para");
+    function Click()
+    {
+        alert(inp.value);
+        pa.innerText =  "Entered value : "  + inp.value
+    }
+</script>
+</html>
