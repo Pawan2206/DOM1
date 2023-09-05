@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Showing Alerts</title>
+</head>
+<body>
+    <button onclick="showFirstName()">FIRSTNAME</button>
+    <button onclick="showLastName()">LASTNAME</button>
+    <button onclick="showFullName()">FIRSTNAME NAME</button>
+    <script type="text/javascript">
+        // Define and assign values to first name and last name
+        let firstName = "Pawan Kumar";
+        let lastName = "Gupta";
+
+        function showFirstName() {
+            // Show an alert with the first name
+            alert(firstName);
+        }
+
+        function showLastName() {
+            // Show an alert with the last name
+            alert(lastName);
+        }
+
+        function showFullName() {
+            // Show an alert with the full name (firstname lastname)
+            alert(firstName + " " + lastName);
+        }
+    </script>
+</body>
+</html>
